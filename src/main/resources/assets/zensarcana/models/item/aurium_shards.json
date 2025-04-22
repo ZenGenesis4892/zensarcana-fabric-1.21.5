@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "zensarcana:item/raw_aurium"
+    "layer0": "zensarcana:item/aurium_shards"
   }
 }

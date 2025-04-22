@@ -12,7 +12,9 @@ import net.zengenesis.zensarcana.ZensArcana;
 
 public class ModItems {
 
-    public static final Item RAW_AURIUM = registerItem("raw_aurium", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ZensArcana.MOD_ID,"raw_aurium")))));
+    public static final Item AURIUM_SHARDS = registerItem("aurium_shards", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ZensArcana.MOD_ID,"aurium_shards")))));
+    public static final Item AURIUM_PLASTEEL = registerItem("aurium_plasteel", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ZensArcana.MOD_ID,"aurium_plasteel")))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ZensArcana.MOD_ID, name), item);
@@ -22,7 +24,9 @@ public class ModItems {
         ZensArcana.LOGGER.info("Registering Mod Items for " + ZensArcana.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(RAW_AURIUM);
+            entries.add(AURIUM_SHARDS);
+            entries.add(AURIUM_PLASTEEL);
+
         });
     }
 }
