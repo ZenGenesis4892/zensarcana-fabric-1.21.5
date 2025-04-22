@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "zensarcana",
+	"version": "${version}",
+	"name": "Zen's Arcana",
+	"description": "Learn the secrets of magic, and become the most powerful being in the universe! First mod made by ZenGenesis",
+	"authors": [
+		"ZenGenesis"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Mods-By-ZenGenesis/zensarcana-fabric-1.21.5"
+	},
+	"license": "MIT",
+	"icon": "assets/zensarcana/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zengenesis.zensarcana.ZensArcana"
+		],
+		"fabric-datagen": [
+			"net.zengenesis.zensarcana.ZensArcanaDataGenerator"
+		],
+		"client": [
+			"net.zengenesis.zensarcana.ZensArcanaClient"
+		]
+	},
+	"mixins": [
+		"zensarcana.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
