@@ -2,6 +2,7 @@ package net.zengenesis.zensarcana;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.zengenesis.zensarcana.block.ModBlocks;
 import net.zengenesis.zensarcana.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ public class ZensArcana implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }

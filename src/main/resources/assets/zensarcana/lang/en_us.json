@@ -1,4 +1,6 @@
 {
   "item.zensarcana.aurium_shards": "Aurium Shards",
-  "item.zensarcana.aurium_plasteel": "Aurium Plasteel"
+  "item.zensarcana.aurium_plasteel": "Aurium Plasteel",
+
+  "item.zensarcana.aurium_plasteel_block": "Block of Aurium Plasteel"
 }
