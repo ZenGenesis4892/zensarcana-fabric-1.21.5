@@ -2,6 +2,8 @@ package net.zengenesis.zensarcana;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
 import net.zengenesis.zensarcana.block.ModBlocks;
 import net.zengenesis.zensarcana.item.ModItemGroups;
 import net.zengenesis.zensarcana.item.ModItems;

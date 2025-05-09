@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "zensarcana:block/aurium_crystal_cluster"
+  }
+}

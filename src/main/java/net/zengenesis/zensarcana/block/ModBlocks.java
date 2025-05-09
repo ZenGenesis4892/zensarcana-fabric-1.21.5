@@ -19,18 +19,11 @@ public class ModBlocks {
     public static final Block AURIUM_PLASTEEL_BLOCK = registerBlock("aurium_plasteel_block",
             AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK));
-            //new Block(AbstractBlock.Settings.create().strength(4f)
-            //        .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block AURIUM_CRYSTAL_CLUSTER = registerBlock("aurium_crystal_cluster",
+            AbstractBlock.Settings.create().strength(4f).nonOpaque()
+                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_CLUSTER));
 
-    //private static Block registerBlock(String name, Block block) {
-    //    registerBlockItem(name, block);
-    //    return Registry.register(Registries.BLOCK, Identifier.of(ZensArcana.MOD_ID, name), block);
-    //}
 
-    //private static void registerBlockItem(String name, Block block) {
-    //    Registry.register(Registries.ITEM, Identifier.of(ZensArcana.MOD_ID, name),
-    //            new BlockItem(block, new Item.Settings()));
-    //}
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(ZensArcana.MOD_ID, name));
@@ -50,6 +43,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.AURIUM_PLASTEEL_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.AURIUM_CRYSTAL_CLUSTER);
         });
     }
 }

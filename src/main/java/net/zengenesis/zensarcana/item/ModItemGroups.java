@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.AURIUM_SHARDS);
                         entries.add(ModItems.AURIUM_PLASTEEL);
                         entries.add(ModBlocks.AURIUM_PLASTEEL_BLOCK);
+                        entries.add(ModBlocks.AURIUM_CRYSTAL_CLUSTER);
 
                     }).build());
 
