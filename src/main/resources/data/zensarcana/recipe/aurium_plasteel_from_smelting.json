@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "aurium_plasteel",
+  "ingredient": "zensarcana:aurium_shards",
+  "result": {
+    "id": "zensarcana:aurium_plasteel"
+  }
+}

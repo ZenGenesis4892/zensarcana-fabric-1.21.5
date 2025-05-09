@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+      "zensarcana:aurium_plasteel_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "zensarcana:aurium_plasteel"
+  }
+}
